@@ -1,0 +1,14 @@
+---
+# This playbook deploys the whole application stack in this site.
+
+- name: deploy MySQL and configure the databases
+  hosts: mysql
+  user: ubuntu
+  sudo: yes
+
+  roles:
+    - role: roles/mysql
+      dbuser: "capublic"
+      dbpassword: "capublic"
+      dbname: "capublic"
+
