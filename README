@@ -1,0 +1,1 @@
+Vagrant file for starting a MySQL instance into which the California legislature's MySQL export files can be loaded.
